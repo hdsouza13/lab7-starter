@@ -8,11 +8,11 @@ class RecipeCard extends HTMLElement {
 
 		// EXPOSE - START (All expose numbers start with A)
 		// A1. TODO - Attach the shadow DOM to this Web Component (leave the mode open)
-		const shadowEl = this.attachShadow({mode:'open'});
+		const shadowEl = this.attachShadow({mode:"open"});
 		// A2. TODO - Create an <article> element - This will hold our markup once our data is set
-		const articleEl = document.createElement('article');
+		const articleEl = document.createElement("article");
 		// A3. TODO - Create a style element - This will hold all of the styles for the Web Component
-		const styleEl = document.createElement('style');
+		const styleEl = document.createElement("style");
 		// A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
 		styleEl.innerHTML = `
 		* {
@@ -149,4 +149,4 @@ class RecipeCard extends HTMLElement {
 
 // A8. TODO - Define the Class as a customElement so that you can create
 //           'recipe-card' elements
-customElements.define('recipe-card', RecipeCard);
+customElements.define("recipe-card", RecipeCard);
